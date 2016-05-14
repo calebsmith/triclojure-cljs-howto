@@ -1,0 +1,2 @@
+#!/bin/sh
+emacs-gui slides.org --execute=\(org-present\)

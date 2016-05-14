@@ -1,0 +1,65 @@
+* ClojureScript Tooling HowTo
+[[./images/cljs-white.png]]
+
+* About Me
+** Caleb Smith
+
+[[./images/avatar.jpg]]
+
+GitHub: calebsmith
+ @CalebSmithNC
+
+Work: Full-time Clojure at Transportation Insight
+
+* Talk Outline:
+** Building Clojurescript
+** Editor integration
+** Development workflow (Hands-on)
+
+* Building ClojureScript
+
+* ClojureScript only (no build system)
+** [[https://github.com/clojure/clojurescript/wiki/Quick-Start][ClojureScript Quick Start]] (recommended background, not tooling)
+
+* Build Tools:
+** Leinigen - [[https://github.com/emezeske/lein-cljsbuild][lein-cljsbuild]]
+** Boot - [[https://github.com/adzerk-oss/boot-cljs][boot-cljs]]
+
+* Figwheel
+** Can run stand-alone or embedded in Clojure server
+** [[https://github.com/bhauman/lein-figwheel][lein-figwheel]]
+
+* Figwheel Example ...
+[[https://github.com/bhauman/lein-figwheel/wiki/Quick-Start][Figwheel Quick Start]]
+[[https://github.com/bhauman/figwheel-template][Figwheel Template]]
+#+BEGIN_SRC shell
+    lein new figwheel hello-world
+#+END_SRC
+
+* Editors
+
+* Which?
+** Vim
+** *Emacs*
+** *IntelliJ (Cursive)*
+** LightTable
+** Sublime Text
+** Atom
+
+* Spacemacs
+** Pre-configured Emacs+Vim
+** CIDER
+
+* Features for Clojure(Script):
+** (Re)load namespace
+** Evaluate current form
+** Evaluate current form and paste result
+** Autocomplete
+** Goto definition
+** Hotload dependency (no REPL restarting)
+
+* Example Project:
+
+* Questions?
+
+* Thank You
