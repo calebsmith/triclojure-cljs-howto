@@ -1,0 +1,161 @@
+% Created 2016-05-21 Sat 11:32
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Caleb Smith}
+\date{\today}
+\title{}
+\hypersetup{
+ pdfauthor={Caleb Smith},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 24.5.1 (Org mode 8.3.4)}, 
+ pdflang={English}}
+\begin{document}
+
+\tableofcontents
+
+\section{ClojureScript Tooling HowTo}
+\label{sec:orgheadline1}
+\includegraphics[width=.9\linewidth]{./images/cljs-white.png}
+
+\section{About Me}
+\label{sec:orgheadline3}
+\subsection{Caleb Smith}
+\label{sec:orgheadline2}
+
+\includegraphics[width=.9\linewidth]{./images/avatar.jpg}
+
+GitHub: calebsmith
+ @CalebSmithNC
+
+Work: Full-time Clojure at Transportation Insight
+
+\section{Talk Outline:}
+\label{sec:orgheadline7}
+\subsection{Building Clojurescript}
+\label{sec:orgheadline4}
+\subsection{Editor integration}
+\label{sec:orgheadline5}
+\subsection{Development workflow (Hands-on)}
+\label{sec:orgheadline6}
+
+\section{Building ClojureScript}
+\label{sec:orgheadline8}
+
+\section{ClojureScript only (no build system)}
+\label{sec:orgheadline10}
+\subsection{\href{https://github.com/clojure/clojurescript/wiki/Quick-Start}{ClojureScript Quick Start} (recommended background, not tooling)}
+\label{sec:orgheadline9}
+
+\section{Build Tools:}
+\label{sec:orgheadline13}
+\subsection{Leinigen - \href{https://github.com/emezeske/lein-cljsbuild}{lein-cljsbuild}}
+\label{sec:orgheadline11}
+\subsection{Boot - \href{https://github.com/adzerk-oss/boot-cljs}{boot-cljs}}
+\label{sec:orgheadline12}
+
+\section{Figwheel}
+\label{sec:orgheadline16}
+\subsection{Can run stand-alone or embedded in Clojure server}
+\label{sec:orgheadline14}
+\subsection{\href{https://github.com/bhauman/lein-figwheel}{lein-figwheel}}
+\label{sec:orgheadline15}
+
+\section{Figwheel Example \ldots{}}
+\label{sec:orgheadline20}
+\href{https://github.com/bhauman/figwheel-template}{Figwheel Template}
+\begin{verbatim}
+lein new figwheel hi
+cd hi
+lein figwheel
+\end{verbatim}
+
+\subsection{Open localhost:3449}
+\label{sec:orgheadline17}
+\subsection{Ensure REPL works}
+\label{sec:orgheadline18}
+\subsection{Examine project.clj and other boilerplate}
+\label{sec:orgheadline19}
+
+\section{Editors}
+\label{sec:orgheadline21}
+
+\section{Which?}
+\label{sec:orgheadline28}
+\subsection{Vim}
+\label{sec:orgheadline22}
+\subsection{\textbf{Emacs}}
+\label{sec:orgheadline23}
+\subsection{\textbf{IntelliJ (Cursive)}}
+\label{sec:orgheadline24}
+\subsection{LightTable}
+\label{sec:orgheadline25}
+\subsection{Sublime Text}
+\label{sec:orgheadline26}
+\subsection{Atom}
+\label{sec:orgheadline27}
+
+\section{Spacemacs}
+\label{sec:orgheadline31}
+\subsection{Pre-configured Emacs+Vim}
+\label{sec:orgheadline29}
+\subsection{CIDER}
+\label{sec:orgheadline30}
+
+\section{Features for Clojure(Script):}
+\label{sec:orgheadline38}
+\subsection{(Re)load namespace}
+\label{sec:orgheadline32}
+\subsection{Evaluate current form}
+\label{sec:orgheadline33}
+\subsection{Evaluate current form and paste result}
+\label{sec:orgheadline34}
+\subsection{Autocomplete}
+\label{sec:orgheadline35}
+\subsection{Goto definition}
+\label{sec:orgheadline36}
+\subsection{Hotload dependency (no REPL restarting)}
+\label{sec:orgheadline37}
+
+\section{Toggling REPL vs. Dueling REPL's}
+\label{sec:orgheadline41}
+\subsection{Cider >= 0.13 - Clojure and CLJS REPL}
+\label{sec:orgheadline39}
+\subsection{Cider <= 0.12 - Same \textbf{or} Clojure REPLj + toggling}
+\label{sec:orgheadline40}
+
+\section{Emacs Figwheel setup:}
+\label{sec:orgheadline42}
+
+\url{https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl}
+
+\begin{verbatim}
+(setq cider-cljs-lein-repl
+      "(do (require 'figwheel-sidecar.repl-api)
+          (figwheel-sidecar.repl-api/start-figwheel!)
+          (figwheel-sidecar.repl-api/cljs-repl))")
+\end{verbatim}
+
+\section{Example Project:}
+\label{sec:orgheadline43}
+
+\section{Questions?}
+\label{sec:orgheadline44}
+
+\section{Thank You}
+\label{sec:orgheadline45}
+\end{document}

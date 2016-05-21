@@ -1,3 +1,5 @@
+#+LANGUAGE:  en
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/css/style.css" />
 * ClojureScript Tooling HowTo
 [[./images/cljs-white.png]]
 
