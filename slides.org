@@ -30,11 +30,16 @@ Work: Full-time Clojure at Transportation Insight
 ** [[https://github.com/bhauman/lein-figwheel][lein-figwheel]]
 
 * Figwheel Example ...
-[[https://github.com/bhauman/lein-figwheel/wiki/Quick-Start][Figwheel Quick Start]]
 [[https://github.com/bhauman/figwheel-template][Figwheel Template]]
 #+BEGIN_SRC shell
-    lein new figwheel hello-world
+    lein new figwheel hi
+    cd hi
+    lein figwheel
 #+END_SRC
+
+** Open localhost:3449
+** Ensure REPL works
+** Examine project.clj and other boilerplate
 
 * Editors
 
@@ -57,6 +62,21 @@ Work: Full-time Clojure at Transportation Insight
 ** Autocomplete
 ** Goto definition
 ** Hotload dependency (no REPL restarting)
+
+* Toggling REPL vs. Dueling REPL's
+** Cider >= 0.13 - Clojure and CLJS REPL
+** Cider <= 0.12 - Same *or* Clojure REPLj + toggling
+
+* Emacs Figwheel setup:
+
+[[https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl]]
+
+#+BEGIN_SRC elisp
+  (setq cider-cljs-lein-repl
+        "(do (require 'figwheel-sidecar.repl-api)
+            (figwheel-sidecar.repl-api/start-figwheel!)
+            (figwheel-sidecar.repl-api/cljs-repl))")
+#+END_SRC
 
 * Example Project:
 
