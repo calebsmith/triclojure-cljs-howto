@@ -1,4 +1,6 @@
 #+LANGUAGE:  en
+#+LINK_HOME: http://calebsmith.github.io/triclojure-cljs-howto/slides.html
+#+LINK_UP: http://calebsmith.github.io/triclojure-cljs-howto/slides.html
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="/css/style.css" />
 * ClojureScript Tooling HowTo
 [[./images/cljs-white.png]]
