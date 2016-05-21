@@ -77,7 +77,7 @@ Work: Full-time Clojure at Transportation Insight
 * Spacemacs
  Pre-configured Emacs+Vim
 
- CIDERf
+ CIDER
 
 
 
