@@ -100,7 +100,7 @@ Work: Full-time Clojure at Transportation Insight
 * Toggling REPL vs. Dueling REPL's
  Cider >= 0.13 - Clojure and CLJS REPL
 
- Cider <= 0.12 - Same *or* Clojure REPLj + toggling
+ Cider <= 0.12 - Same *or* Clojure REPL + toggling
 
 
 * Emacs Figwheel setup:
