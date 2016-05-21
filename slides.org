@@ -6,7 +6,8 @@
 [[./images/cljs-white.png]]
 
 * About Me
-** Caleb Smith
+
+ Caleb Smith
 
 [[./images/avatar.jpg]]
 
@@ -16,22 +17,30 @@ GitHub: calebsmith
 Work: Full-time Clojure at Transportation Insight
 
 * Talk Outline:
-** Building Clojurescript
-** Editor integration
-** Development workflow (Hands-on)
+ Building Clojurescript
+
+ Editor integration
+
+ Development workflow (Hands-on)
+
 
 * Building ClojureScript
 
 * ClojureScript only (no build system)
-** [[https://github.com/clojure/clojurescript/wiki/Quick-Start][ClojureScript Quick Start]] (recommended background, not tooling)
+[[https://github.com/clojure/clojurescript/wiki/Quick-Start][ClojureScript Quick Start]] (recommended background, not tooling)
+
 
 * Build Tools:
-** Leinigen - [[https://github.com/emezeske/lein-cljsbuild][lein-cljsbuild]]
-** Boot - [[https://github.com/adzerk-oss/boot-cljs][boot-cljs]]
+ Leinigen - [[https://github.com/emezeske/lein-cljsbuild][lein-cljsbuild]]
+
+ Boot - [[https://github.com/adzerk-oss/boot-cljs][boot-cljs]]
+
 
 * Figwheel
-** Can run stand-alone or embedded in Clojure server
-** [[https://github.com/bhauman/lein-figwheel][lein-figwheel]]
+ Can run stand-alone or embedded in Clojure server
+
+ [[https://github.com/bhauman/lein-figwheel][lein-figwheel]]
+
 
 * Figwheel Example ...
 [[https://github.com/bhauman/figwheel-template][Figwheel Template]]
@@ -41,35 +50,57 @@ Work: Full-time Clojure at Transportation Insight
     lein figwheel
 #+END_SRC
 
-** Open localhost:3449
-** Ensure REPL works
-** Examine project.clj and other boilerplate
+ Open localhost:3449
+
+ Ensure REPL works
+
+ Examine project.clj and other boilerplate
+
 
 * Editors
 
 * Which?
-** Vim
-** *Emacs*
-** *IntelliJ (Cursive)*
-** LightTable
-** Sublime Text
-** Atom
+ Vim
+
+*Emacs*
+
+ *IntelliJ (Cursive)*
+
+ LightTable
+
+ Sublime Text
+
+ Atom
+
 
 * Spacemacs
-** Pre-configured Emacs+Vim
-** CIDER
+ Pre-configured Emacs+Vim
+
+ CIDERf
+
+
 
 * Features for Clojure(Script):
-** (Re)load namespace
-** Evaluate current form
-** Evaluate current form and paste result
-** Autocomplete
-** Goto definition
-** Hotload dependency (no REPL restarting)
+ (Re)load namespace
+
+ Evaluate current form
+
+ Evaluate current form and paste result
+
+ Autocomplete
+
+ Goto definition
+
+ Hotload dependency (no REPL restarting)
+
+
+
 
 * Toggling REPL vs. Dueling REPL's
-** Cider >= 0.13 - Clojure and CLJS REPL
-** Cider <= 0.12 - Same *or* Clojure REPLj + toggling
+ Cider >= 0.13 - Clojure and CLJS REPL
+
+ Cider <= 0.12 - Same *or* Clojure REPLj + toggling
+
 
 * Emacs Figwheel setup:
 
