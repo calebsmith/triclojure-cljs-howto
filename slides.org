@@ -45,11 +45,11 @@ Work: Full-time Clojure at Transportation Insight
 * Figwheel Example ...
 [[https://github.com/bhauman/figwheel-template][Figwheel Template]]
 
-#+BEGIN_SRC
+#+BEGIN_EXAMPLE
     lein new figwheel hi
     cd hi
     lein figwheel
-#+END_SRC
+#+END_EXAMPLE
 
  Open localhost:3449
 
