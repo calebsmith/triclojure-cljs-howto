@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2016-05-21 Sat 12:49 -->
+<!-- 2016-05-23 Mon 22:43 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="viewport" content="width=device-width, initial-scale=1" />
 <title></title>
@@ -151,20 +151,22 @@ for the JavaScript code in this tag.
 <li><a href="#orgheadline1">1. ClojureScript Tooling HowTo</a></li>
 <li><a href="#orgheadline2">2. About Me</a></li>
 <li><a href="#orgheadline3">3. Talk Outline:</a></li>
-<li><a href="#orgheadline4">4. Building ClojureScript</a></li>
-<li><a href="#orgheadline5">5. ClojureScript only (no build system)</a></li>
-<li><a href="#orgheadline6">6. Build Tools:</a></li>
-<li><a href="#orgheadline7">7. Figwheel</a></li>
-<li><a href="#orgheadline8">8. Figwheel Example &#x2026;</a></li>
-<li><a href="#orgheadline9">9. Editors</a></li>
-<li><a href="#orgheadline10">10. Which?</a></li>
-<li><a href="#orgheadline11">11. Spacemacs</a></li>
-<li><a href="#orgheadline12">12. Features for Clojure(Script):</a></li>
-<li><a href="#orgheadline13">13. Toggling REPL vs. Dueling REPL's</a></li>
-<li><a href="#orgheadline14">14. Emacs Figwheel setup:</a></li>
-<li><a href="#orgheadline15">15. Example Project:</a></li>
-<li><a href="#orgheadline16">16. Questions?</a></li>
-<li><a href="#orgheadline17">17. Thank You</a></li>
+<li><a href="#orgheadline4">4. Philosophy</a></li>
+<li><a href="#orgheadline5">5. Building ClojureScript</a></li>
+<li><a href="#orgheadline6">6. ClojureScript only (no build system)</a></li>
+<li><a href="#orgheadline7">7. Build Tools:</a></li>
+<li><a href="#orgheadline8">8. Figwheel</a></li>
+<li><a href="#orgheadline9">9. Figwheel Example &#x2026;</a></li>
+<li><a href="#orgheadline10">10. Editors</a></li>
+<li><a href="#orgheadline11">11. Which?</a></li>
+<li><a href="#orgheadline12">12. Spacemacs</a></li>
+<li><a href="#orgheadline13">13. Features for Clojure(Script):</a></li>
+<li><a href="#orgheadline14">14. Toggling REPL vs. Dueling REPL's</a></li>
+<li><a href="#orgheadline15">15. Emacs Figwheel setup:</a></li>
+<li><a href="#orgheadline16">16. Lein profile:</a></li>
+<li><a href="#orgheadline17">17. Example Project:</a></li>
+<li><a href="#orgheadline18">18. Questions?</a></li>
+<li><a href="#orgheadline19">19. Thank You</a></li>
 </ul>
 </div>
 </div>
@@ -207,6 +209,10 @@ Work: Full-time Clojure at Transportation Insight
 <h2 id="orgheadline3"><span class="section-number-2">3</span> Talk Outline:</h2>
 <div class="outline-text-2" id="text-3">
 <p>
+Philosophy
+</p>
+
+<p>
 Building Clojurescript
 </p>
 
@@ -220,14 +226,30 @@ Development workflow (Hands-on)
 </div>
 </div>
 
-
 <div id="outline-container-orgheadline4" class="outline-2">
-<h2 id="orgheadline4"><span class="section-number-2">4</span> Building ClojureScript</h2>
+<h2 id="orgheadline4"><span class="section-number-2">4</span> Philosophy</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+"Inventing on Principle" - Bret Victor <a href="https://vimeo.com/36579366">https://vimeo.com/36579366</a>
+</p>
+
+<p>
+Common Lisp and Smalltalk
+</p>
+
+<p>
+<a href="http://stackoverflow.com/questions/9448215/tools-to-support-live-coding-as-in-bret-victors-inventing-on-principle-talk">http://stackoverflow.com/questions/9448215/tools-to-support-live-coding-as-in-bret-victors-inventing-on-principle-talk</a>
+</p>
+</div>
 </div>
 
 <div id="outline-container-orgheadline5" class="outline-2">
-<h2 id="orgheadline5"><span class="section-number-2">5</span> ClojureScript only (no build system)</h2>
-<div class="outline-text-2" id="text-5">
+<h2 id="orgheadline5"><span class="section-number-2">5</span> Building ClojureScript</h2>
+</div>
+
+<div id="outline-container-orgheadline6" class="outline-2">
+<h2 id="orgheadline6"><span class="section-number-2">6</span> ClojureScript only (no build system)</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 <a href="https://github.com/clojure/clojurescript/wiki/Quick-Start">ClojureScript Quick Start</a> (recommended background, not tooling)
 </p>
@@ -235,11 +257,11 @@ Development workflow (Hands-on)
 </div>
 
 
-<div id="outline-container-orgheadline6" class="outline-2">
-<h2 id="orgheadline6"><span class="section-number-2">6</span> Build Tools:</h2>
-<div class="outline-text-2" id="text-6">
+<div id="outline-container-orgheadline7" class="outline-2">
+<h2 id="orgheadline7"><span class="section-number-2">7</span> Build Tools:</h2>
+<div class="outline-text-2" id="text-7">
 <p>
-Leinigen - <a href="https://github.com/emezeske/lein-cljsbuild">lein-cljsbuild</a>
+Leiningen - <a href="https://github.com/emezeske/lein-cljsbuild">lein-cljsbuild</a>
 </p>
 
 <p>
@@ -249,23 +271,38 @@ Boot - <a href="https://github.com/adzerk-oss/boot-cljs">boot-cljs</a>
 </div>
 
 
-<div id="outline-container-orgheadline7" class="outline-2">
-<h2 id="orgheadline7"><span class="section-number-2">7</span> Figwheel</h2>
-<div class="outline-text-2" id="text-7">
-<p>
-Can run stand-alone or embedded in Clojure server
-</p>
-
+<div id="outline-container-orgheadline8" class="outline-2">
+<h2 id="orgheadline8"><span class="section-number-2">8</span> Figwheel</h2>
+<div class="outline-text-2" id="text-8">
 <p>
 <a href="https://github.com/bhauman/lein-figwheel">lein-figwheel</a>
 </p>
+
+<p>
+Long running - Builds as source changes
+</p>
+
+<p>
+Updates browser via websocket
+</p>
+
+<p>
+Runs:
+</p>
+
+<ol class="org-ol">
+<li>stand-alone</li>
+<li>Embedded in Ring handler</li>
+<li>In component or mount</li>
+<li>From an NRepl</li>
+</ol>
 </div>
 </div>
 
 
-<div id="outline-container-orgheadline8" class="outline-2">
-<h2 id="orgheadline8"><span class="section-number-2">8</span> Figwheel Example &#x2026;</h2>
-<div class="outline-text-2" id="text-8">
+<div id="outline-container-orgheadline9" class="outline-2">
+<h2 id="orgheadline9"><span class="section-number-2">9</span> Figwheel Example &#x2026;</h2>
+<div class="outline-text-2" id="text-9">
 <p>
 <a href="https://github.com/bhauman/figwheel-template">Figwheel Template</a>
 </p>
@@ -291,13 +328,13 @@ Examine project.clj and other boilerplate
 </div>
 
 
-<div id="outline-container-orgheadline9" class="outline-2">
-<h2 id="orgheadline9"><span class="section-number-2">9</span> Editors</h2>
+<div id="outline-container-orgheadline10" class="outline-2">
+<h2 id="orgheadline10"><span class="section-number-2">10</span> Editors</h2>
 </div>
 
-<div id="outline-container-orgheadline10" class="outline-2">
-<h2 id="orgheadline10"><span class="section-number-2">10</span> Which?</h2>
-<div class="outline-text-2" id="text-10">
+<div id="outline-container-orgheadline11" class="outline-2">
+<h2 id="orgheadline11"><span class="section-number-2">11</span> Which?</h2>
+<div class="outline-text-2" id="text-11">
 <p>
 Vim
 </p>
@@ -325,9 +362,9 @@ Atom
 </div>
 
 
-<div id="outline-container-orgheadline11" class="outline-2">
-<h2 id="orgheadline11"><span class="section-number-2">11</span> Spacemacs</h2>
-<div class="outline-text-2" id="text-11">
+<div id="outline-container-orgheadline12" class="outline-2">
+<h2 id="orgheadline12"><span class="section-number-2">12</span> Spacemacs</h2>
+<div class="outline-text-2" id="text-12">
 <p>
 Pre-configured Emacs+Vim
 </p>
@@ -340,9 +377,9 @@ CIDER
 
 
 
-<div id="outline-container-orgheadline12" class="outline-2">
-<h2 id="orgheadline12"><span class="section-number-2">12</span> Features for Clojure(Script):</h2>
-<div class="outline-text-2" id="text-12">
+<div id="outline-container-orgheadline13" class="outline-2">
+<h2 id="orgheadline13"><span class="section-number-2">13</span> Features for Clojure(Script):</h2>
+<div class="outline-text-2" id="text-13">
 <p>
 (Re)load namespace
 </p>
@@ -372,9 +409,9 @@ Hotload dependency (no REPL restarting)
 
 
 
-<div id="outline-container-orgheadline13" class="outline-2">
-<h2 id="orgheadline13"><span class="section-number-2">13</span> Toggling REPL vs. Dueling REPL's</h2>
-<div class="outline-text-2" id="text-13">
+<div id="outline-container-orgheadline14" class="outline-2">
+<h2 id="orgheadline14"><span class="section-number-2">14</span> Toggling REPL vs. Dueling REPL's</h2>
+<div class="outline-text-2" id="text-14">
 <p>
 Cider &gt;= 0.13 - Clojure and CLJS REPL
 </p>
@@ -386,9 +423,9 @@ Cider &lt;= 0.12 - Same <b>or</b> Clojure REPL + toggling
 </div>
 
 
-<div id="outline-container-orgheadline14" class="outline-2">
-<h2 id="orgheadline14"><span class="section-number-2">14</span> Emacs Figwheel setup:</h2>
-<div class="outline-text-2" id="text-14">
+<div id="outline-container-orgheadline15" class="outline-2">
+<h2 id="orgheadline15"><span class="section-number-2">15</span> Emacs Figwheel setup:</h2>
+<div class="outline-text-2" id="text-15">
 <p>
 <a href="https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl">https://github.com/bhauman/lein-figwheel/wiki/Using-the-Figwheel-REPL-within-NRepl</a>
 </p>
@@ -404,21 +441,37 @@ Cider &lt;= 0.12 - Same <b>or</b> Clojure REPL + toggling
 </div>
 </div>
 
-<div id="outline-container-orgheadline15" class="outline-2">
-<h2 id="orgheadline15"><span class="section-number-2">15</span> Example Project:</h2>
-</div>
-
 <div id="outline-container-orgheadline16" class="outline-2">
-<h2 id="orgheadline16"><span class="section-number-2">16</span> Questions?</h2>
+<h2 id="orgheadline16"><span class="section-number-2">16</span> Lein profile:</h2>
+<div class="outline-text-2" id="text-16">
+<div class="org-src-container">
+
+<pre class="src src-clojure"><span style="color: #AF87FF;">{</span><span style="color: #AF87FF;">:user</span> <span style="color: #5FD7FF;">{</span><span style="color: #AF87FF;">:dependencies</span> <span style="color: #87D700;">[</span><span style="color: #CDC673;">[</span>alembic <span style="color: #CDC673;">"0.3.2"</span><span style="color: #CDC673;">]</span><span style="color: #F5F5F5; background-color: #1B1E1C;">}</span><span style="color: #5FD7FF;">}</span>
+</pre>
+</div>
+</div>
 </div>
 
 <div id="outline-container-orgheadline17" class="outline-2">
-<h2 id="orgheadline17"><span class="section-number-2">17</span> Thank You</h2>
+<h2 id="orgheadline17"><span class="section-number-2">17</span> Example Project:</h2>
+<div class="outline-text-2" id="text-17">
+<p>
+<a href="https://github.com/calebsmith/todocljs">https://github.com/calebsmith/todocljs</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgheadline18" class="outline-2">
+<h2 id="orgheadline18"><span class="section-number-2">18</span> Questions?</h2>
+</div>
+
+<div id="outline-container-orgheadline19" class="outline-2">
+<h2 id="orgheadline19"><span class="section-number-2">19</span> Thank You</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Caleb Smith</p>
-<p class="date">Created: 2016-05-21 Sat 12:49</p>
+<p class="date">Created: 2016-05-23 Mon 22:43</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

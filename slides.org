@@ -17,12 +17,21 @@ GitHub: calebsmith
 Work: Full-time Clojure at Transportation Insight
 
 * Talk Outline:
+
+ Philosophy
+
  Building Clojurescript
 
  Editor integration
 
  Development workflow (Hands-on)
 
+* Philosophy
+"Inventing on Principle" - Bret Victor [[https://vimeo.com/36579366]]
+
+Common Lisp and Smalltalk
+
+[[http://stackoverflow.com/questions/9448215/tools-to-support-live-coding-as-in-bret-victors-inventing-on-principle-talk]]
 
 * Building ClojureScript
 
@@ -31,15 +40,25 @@ Work: Full-time Clojure at Transportation Insight
 
 
 * Build Tools:
- Leinigen - [[https://github.com/emezeske/lein-cljsbuild][lein-cljsbuild]]
+ Leiningen - [[https://github.com/emezeske/lein-cljsbuild][lein-cljsbuild]]
 
  Boot - [[https://github.com/adzerk-oss/boot-cljs][boot-cljs]]
 
 
 * Figwheel
- Can run stand-alone or embedded in Clojure server
 
  [[https://github.com/bhauman/lein-figwheel][lein-figwheel]]
+
+ Long running - Builds as source changes
+
+ Updates browser via websocket
+
+ Runs:
+
+ 1. stand-alone 
+ 2. Embedded in Ring handler
+ 3. In component or mount
+ 4. From an NRepl
 
 
 * Figwheel Example ...
@@ -63,7 +82,7 @@ Work: Full-time Clojure at Transportation Insight
 * Which?
  Vim
 
-*Emacs*
+ *Emacs*
 
  *IntelliJ (Cursive)*
 
@@ -114,7 +133,15 @@ Work: Full-time Clojure at Transportation Insight
             (figwheel-sidecar.repl-api/cljs-repl))")
 #+END_SRC
 
+* Lein profile:
+
+#+BEGIN_SRC clojure
+  {:user {:dependencies [[alembic "0.3.2"]}}
+#+END_SRC
+
 * Example Project:
+
+[[https://github.com/calebsmith/todocljs]]
 
 * Questions?
 
