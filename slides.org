@@ -6,6 +6,8 @@
 
 [[./images/cljs-white.png]]
 
+[[http://bit.ly/triclojure-cljs-howto]]
+
 * About Me
  Caleb Smith
 
